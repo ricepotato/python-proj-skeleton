@@ -10,7 +10,3 @@ class BasicTestMod2(unittest.TestCase):
     def test_mod(self):
         res = mod_func()
         assert res
-
-
-if __name__ == '__main__':
-    unittest.main()
