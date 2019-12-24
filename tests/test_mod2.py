@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from app.common.mod import mod_func
+from app.mod2 import mod_func
 import unittest
 
 
-class BasicTestMod(unittest.TestCase):
+class BasicTestMod2(unittest.TestCase):
     """Basic test mpd."""
 
     def test_mod(self):
