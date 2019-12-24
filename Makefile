@@ -2,6 +2,9 @@ init:
 	pip install -r requirements.txt
 
 test:
+	nosetests tests 
+
+unittest:
 	python -m unittest discover tests
 
 coverage:
