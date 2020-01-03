@@ -1,6 +1,8 @@
+import logging
+
+from app.common.clsmod import SomeClass
 from app.common.mod import mod_func
 from app.mod2 import mod_func as mod2_func
-import logging
 
 log = logging.getLogger("sample." + __name__)
 stream_handler = logging.StreamHandler()
@@ -17,6 +19,10 @@ def main():
     log.info(res)
     res = mod2_func()
     log.info(res)
+
+    clsobj = SomeClass()
+    res = clsobj.add(3, 4)
+    log.info(f"clsobj.add res=${res}")
 
 
 if __name__ == "__main__":

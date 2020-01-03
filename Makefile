@@ -1,16 +1,17 @@
 init:
-	pip install -r requirements.txt
+	echo "init"
 
-test:
-	nosetests tests 
+install:
+	virtualenv ./.venv
+	./.venv/bin/pip install -r requirements.txt
 
 unittest:
-	python -m unittest discover tests
+	./.venv/bin/python -m unittest discover tests
 
 coverage:
-	coverage run -m unittest discover tests
-	coverage html
-	coverage report
+	./.venv/bin/coverage run -m unittest discover tests
+	./.venv/bin/coverage html
+	./.venv/bin/coverage report
 
 build:
 	echo "build"

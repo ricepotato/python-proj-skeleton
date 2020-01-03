@@ -1,3 +1,2 @@
-nose
-sphinx
 coverage
+autopep8
